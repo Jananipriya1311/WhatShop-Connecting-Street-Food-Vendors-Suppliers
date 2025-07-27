@@ -5,14 +5,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// Your Firebase config (replace with your credentials)
+// Your Firebase config from earlier
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBLRYLdJGLNIJvFhZCUE7jCpvj4ijCYytE",
+  authDomain: "whatshop-91b30.firebaseapp.com",
+  projectId: "whatshop-91b30",
+  storageBucket: "whatshop-91b30.firebasestorage.app",
+  messagingSenderId: "235822316914",
+  appId: "1:235822316914:web:b1e1d6a286d92adec971eb"
 };
 
 // Initialize Firebase
