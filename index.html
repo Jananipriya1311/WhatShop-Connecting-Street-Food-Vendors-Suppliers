@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WhatShop - Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      background: #f4f7f8;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      color: #333;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      color: #0077cc;
+      font-size: 1.8rem;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 95%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: #0077cc;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    label {
+      font-weight: 600;
+      cursor: pointer;
+      margin: 0 15px;
+    }
+
+    .role-selection {
+      margin-bottom: 20px;
+    }
+
+    .role-selection input[type="radio"] {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h2>WhatShop Login / Signup</h2>
+
+  <div class="role-selection">
+    <label><input type="radio" name="role" value="vendor" checked /> Vendor</label>
+    <label><input type="radio" name="role" value="supplier" /> Supplier</label>
+  </div>
+
+  <input type="text" id="name" placeholder="Your Name / Shop Name" /><br />
+  <input type="email" id="email" placeholder="Email" /><br />
+  <input type="password" id="password" placeholder="Password" /><br />
+
+  <button onclick="signup()">Sign Up</button>
+  <button onclick="login()">Login</button>
+
+  <script type="module">
+    import { auth } from './firebase.js';
+    import {
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    // Get selected role (vendor or supplier)
+    function getSelectedRole() {
+      return document.querySelector('input[name="role"]:checked').value;
+    }
+
+    // Sign Up handler
+    window.signup = async () => {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const role = getSelectedRole();
+
+      if (!name || !email || !password) {
+        alert('Please fill all fields');
+        return;
+      }
+
+      try {
+        await createUserWithEmailAndPassword(auth, email, password);
+        localStorage.setItem('shopName', name);
+        alert('Signup successful!');
+        redirectUser(role);
+      } catch (err) {
+        alert(err.message);
+      }
+    };
+
+    // Login handler
+    window.login = async () => {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const role = getSelectedRole();
+
+      if (!name || !email || !password) {
+        alert('Please fill all fields');
+        return;
+      }
+
+      try {
+        await signInWithEmailAndPassword(auth, email, password);
+        localStorage.setItem('shopName', name);
+        alert('Login successful!');
+        redirectUser(role);
+      } catch (err) {
+        alert(err.message);
+      }
+    };
+
+    // Redirect to vendor or supplier page
+    function redirectUser(role) {
+      if (role === 'vendor') {
+        window.location.href = 'vendor.html';
+      } else {
+        window.location.href = 'supplier.html';
+      }
+    }
+  </script>
+</body>
+</html>
