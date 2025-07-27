@@ -83,6 +83,7 @@ This project was built for **Tutedude's Web Development Hackathon 1.0 - Solving 
 - **Jananipriya N**
 - GitHub: [Jananipriya1311](https://github.com/Jananipriya1311)
 - **Rokitha R**
+-  GitHub: [Rokitha26](https://github.com/Rokitha26))
 
 ---
 
