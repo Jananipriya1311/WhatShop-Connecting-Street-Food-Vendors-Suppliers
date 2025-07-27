@@ -5,14 +5,14 @@ This project was built for **Tutedude's Web Development Hackathon 1.0** under th
 It connects **Vendors** and **Suppliers** through a simple and efficient web interface.
 
 - **Vendors** can:
-  - Browse available products
-  - Place orders
-  - Track delivery status
+    - Browse available products
+    - Place orders
+    - Track delivery status
 
 - **Suppliers** can:
-  - Add, update, or delete products
-  - Manage stock quantity
-  - View and fulfill vendor orders
+    - Add, update, or delete products
+    - Manage stock quantity
+    - View and fulfill vendor orders
 
 ---
 
@@ -31,12 +31,13 @@ It connects **Vendors** and **Suppliers** through a simple and efficient web int
 ├── firebase.js       # Firebase configuration
 ```
 
+
 ---
 
 ## ✅ How to Run Locally
 1. **Open `index.html` in your browser**  
    Or use **Live Server** in VS Code for the best experience.
-
+   
 2. **Setup Firebase and update credentials in `firebase.js`**  
    - Go to [Firebase Console](https://firebase.google.com/)  
    - Create a new project  
@@ -44,3 +45,43 @@ It connects **Vendors** and **Suppliers** through a simple and efficient web int
    - Enable **Firestore Database**  
    - Copy your Firebase config and replace it in `firebase.js`  
 
+---
+
+## 🌐 Live Demo
+- **Deployed Link:**  
+  [https://what-shop-connecting-street-food-vendors-suppliers.vercel.app](https://what-shop-connecting-street-food-vendors-suppliers.vercel.app)
+
+- **GitHub Repository:**  
+  [https://github.com/Jananipriya1311/WhatShop-Connecting-Street-Food-Vendors-Suppliers](https://github.com/Jananipriya1311/WhatShop-Connecting-Street-Food-Vendors-Suppliers)
+
+---
+
+## 🧑‍💻 How to Use the Live App
+1. Open the deployed link above.
+2. **Sign Up / Login**
+   - Select your role: **Vendor** or **Supplier**.
+   - Enter your name, email, and password to sign up.
+3. **For Vendors**
+   - Browse products.
+   - Click **Order** to place an order.
+   - View your orders and track delivery status.
+4. **For Suppliers**
+   - Add products with name, price, and stock.
+   - Edit or delete products.
+   - View pending vendor orders and mark as delivered.
+
+---
+
+## 🏆 Hackathon
+This project was built for **Tutedude's Web Development Hackathon 1.0 - Solving for Street Food** 🍲.
+
+---
+
+## 👩‍💻 Developer
+- **Jananipriya N**
+- GitHub: [Jananipriya1311](https://github.com/Jananipriya1311)
+
+---
+
+## 📜 License
+MIT License © 2025
