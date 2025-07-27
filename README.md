@@ -49,7 +49,7 @@ It connects **Vendors** and **Suppliers** through a simple and efficient web int
 
 ## 🌐 Live Demo
 - **Deployed Link:**  
-  [https://what-shop-connecting-street-food-vendors-suppliers.vercel.app](https://what-shop-connecting-street-food-vendors-suppliers.vercel.app)
+  [[https://what-shop-connecting-street-food-vendors-suppliers.vercel.app](https://what-shop-connecting-street-food-ve.vercel.app/)](https://what-shop-connecting-street-food-vendors-suppliers.vercel.app)
 
 - **GitHub Repository:**  
   [https://github.com/Jananipriya1311/WhatShop-Connecting-Street-Food-Vendors-Suppliers](https://github.com/Jananipriya1311/WhatShop-Connecting-Street-Food-Vendors-Suppliers)
