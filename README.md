@@ -78,6 +78,8 @@ This project was built for **Tutedude's Web Development Hackathon 1.0 - Solving 
 ---
 
 ## 👩‍💻 Developer
+- **A Gesfetha**  
+- GitHub: [A-GESFETHA](https://github.com/A-GESFETHA)
 - **Jananipriya N**
 - GitHub: [Jananipriya1311](https://github.com/Jananipriya1311)
 
